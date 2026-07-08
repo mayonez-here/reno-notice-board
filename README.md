@@ -66,3 +66,5 @@ Add optimistic UI updates on the list page (show the deleted card disappearing o
 - Set up the database, deployment, and verified create/edit/delete/persistence end to end myself
 
 Keep this section specific and true to what you actually did — vague or inflated claims are easy for a reviewer to spot in a screen-share follow-up.
+
+Live at: https://reno-notice-board-sigma.vercel.app/
