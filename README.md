@@ -43,6 +43,7 @@ A Notice Board app with full create, read, update, and delete, built with Next.j
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000).
+   Live at: https://reno-notice-board-sigma.vercel.app/
 
 ## Deploying
 
@@ -67,4 +68,4 @@ Add optimistic UI updates on the list page (show the deleted card disappearing o
 
 Keep this section specific and true to what you actually did — vague or inflated claims are easy for a reviewer to spot in a screen-share follow-up.
 
-Live at: https://reno-notice-board-sigma.vercel.app/
+
