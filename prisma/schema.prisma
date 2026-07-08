@@ -1,0 +1,37 @@
+// Prisma schema for the Reno Platforms Notice Board assignment.
+// Datasource is MySQL by default (matches TiDB Cloud's free tier).
+// If you use Neon or Supabase instead, change provider to "postgresql".
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Category {
+  Exam
+  Event
+  General
+}
+
+enum Priority {
+  Normal
+  Urgent
+}
+
+model Notice {
+  id          Int      @id @default(autoincrement())
+  title       String
+  body        String   @db.Text
+  category    Category @default(General)
+  priority    Priority @default(Normal)
+  publishDate DateTime
+  image       String?  @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([priority])
+}
